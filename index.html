@@ -1,43 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thực hành dự án 4</title>
-    <!-- reset css  -->
-    <link rel="stylesheet" href="./assets/css/reset.css"> 
-    
-    <!-- E font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sora:wght@400;600;700;800&display=swap"
-        rel="stylesheet"/>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thực hành dự án 4</title>
+        <!-- reset css  -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
 
-    <!-- style -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- E font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sora:wght@400;600;700;800&display=swap"
+            rel="stylesheet" />
 
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="./assets/img/favicon/android-icon-48x48.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./assets/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./assets/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./assets/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./assets/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./assets/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./assets/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./assets/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="./assets/img/favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+        <!-- style -->
+        <link rel="stylesheet" href="./assets/css/style.css" />
 
-</head>
-<body>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, at accusantium? Magni adipisci quod voluptatem enim tenetur. Atque quia aliquid nobis at harum nam aspernatur, pariatur delectus veritatis itaque tenetur!</p>
-</body>
+        <!-- favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/img/favicon/android-icon-48x48.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/img/favicon/apple-icon-60x60.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/img/favicon/apple-icon-72x72.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/img/favicon/apple-icon-76x76.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/img/favicon/apple-icon-114x114.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/img/favicon/apple-icon-120x120.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/img/favicon/apple-icon-144x144.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/img/favicon/apple-icon-152x152.png" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/img/favicon/apple-icon-180x180.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/img/favicon/android-icon-192x192.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/img/favicon/favicon-32x32.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/img/favicon/favicon-96x96.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/img/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="./assets/img/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header_inner">
+                    <!-- Logo -->
+                    <a href="#!"
+                        ><img
+                            src="./assets/img/logo.svg"
+                            alt="Lucy"
+                            class="logo"
+                    /></a>
+
+                    <!-- Navbar -->
+                    <nav class="navbar">
+                        <ul class="navbar_list">
+                            <li class="navbar_item">
+                                <a href="#!" class="navbar_link">Home</a>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#!" class="navbar_link">About</a>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#!" class="navbar_link">
+                                    Services & Rates
+                                </a>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#!" class="navbar_link">Reviews</a>
+                            </li>
+                            <li class="navbar_item">
+                                <a href="#!" class="navbar_link">
+                                    Contacts us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <!-- Header action -->
+                    <div class="header-action">
+                        <a href="#!" class="btn header_action_btn">Sign in</a>
+                        <a href="#!" class="btn header_action_btn">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- hero  -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero_inner">
+                    <!-- hero media -->
+                    <div class="hero_media">
+                        <div class="hero_img_wrap">
+                            <img
+                                src="./assets/img/hero_pet_01.png"
+                                alt=""
+                                class="hero_img" />
+
+                            <!-- deco -->
+                            <img
+                                src="./assets/img/hero_elip_01.png"
+                                alt=""
+                                class="hero_img_deco hero_img_deco-left" />
+                            <img
+                                src="./assets/img/hero_repai_02.png"
+                                alt=""
+                                class="hero_img_deco hero_img_deco-right" />
+                        </div>
+
+                        <div class="hero_img_wrap hero_img_wrap_small">
+                            <img
+                                src="./assets/img/hero_pet_02.png"
+                                alt=""
+                                class="hero_img hero_img-small" />
+                        </div>
+                    </div>
+                    <div class="hero_list">
+                        <!-- Hero list item 1 -->
+                        <section class="hero_list_item">
+                            <img
+                                src="./assets/img/hero_pet_03.png"
+                                alt=""
+                                class="hero_list_item_thumb" />
+                            <div class="hero_list_item_info">
+                                <p class="hero_list_item_title">Pet Health</p>
+                                <div class="hero_list_item_skeleton"></div>
+                                <div
+                                    class="hero_list_item_skeleton"
+                                    style="--width: 39px"></div>
+                            </div>
+                        </section>
+
+                        <div class="hero_list_item_separate"></div>
+
+                        <!-- Hero list item 2 -->
+                        <section class="hero_list_item">
+                            <img
+                                src="./assets/img/hero_pet_04.png"
+                                alt=""
+                                class="hero_list_item_thumb" />
+                            <div class="hero_list_item_info">
+                                <p class="hero_list_item_title">Pet care</p>
+                                <div class="hero_list_item_skeleton"></div>
+                                <div
+                                    class="hero_list_item_skeleton"
+                                    style="--width: 39px"></div>
+                            </div>
+                        </section>
+                    </div>
+                    <!-- hero content -->
+                    <section class="hero_content">
+                        <h1 class="hero_heading">Established &
+                            Trusted Pet
+                            Care Service</h1>
+                            <p class="hero_desc">Discover a wide variety of Pawsitive services to choose from, including daycare, private walks, office duty and spa.</p>
+                            <div class="hero_row">
+                                <a href="#!" class="btn btn--primary hero_cta_btn">Book a Meet
+                                    <span class="btn_icon">
+                                        <svg width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.48584 1.5L5.98584 4L3.48584 6.5" stroke="#FD5056" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                    </span>
+                                </a>
+                                <a href="#!" class="hero_link">Schedule a Call</a>
+                            </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
