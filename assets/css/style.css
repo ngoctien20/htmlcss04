@@ -458,7 +458,7 @@ border-radius: 1px;
 }
 .about_tab_list{
     position: relative;
-    display: flex;
+    display: inline-flex;
     column-gap: 56px;
     
 }
