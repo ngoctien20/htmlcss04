@@ -47,6 +47,7 @@ a {
     font-size: 1.4rem;
     text-align: center;
     color: #174ca0;
+    transition: 0.2s ease-in-out;
 }
 .btn_icon{
     display: flex;
@@ -254,6 +255,10 @@ min-width: 189px;
 height: 60px;
 font-size: 1.6rem;
 font-weight: 600;
+transition: .2s ease-in-out;
+}
+.hero_cta_btn:hover{
+font-size: 114%;
 }
 .hero_link{
     margin-left: 24px;
@@ -261,7 +266,12 @@ font-weight: 600;
 font-size: 1.6rem;
 font-weight: 500;
 line-height: 16px; /* 100% */
-text-decoration: underline;
+transition: 0.2s ease-in-out;
+
+}
+.hero_link:hover{
+    color:var(--primary-color); 
+    text-decoration: underline;
 }
 /* about */
 .about{
@@ -448,11 +458,11 @@ right: 0;
 bottom: 0;
 height: 2px;
 opacity: 0.07;
-background: #FF5B2E;
+background: var(--primary-color);
 border-radius: 1px;
 }
 .about_tab_item_active::after{
-    background: #FF5B2E;
+    background:var(--primary-color);
     width: 95px;
     opacity: 1;
 }
@@ -499,15 +509,152 @@ line-height: 24px; /* 171.429% */
 .tab_content_more{
     position: relative;
     display: inline-block;
-    color: #FF5D31;
+    color:var(--primary-color);
 font-size: 1.6rem;
 font-weight: 500;
 line-height: 16px; /* 100% */
 padding-bottom: 5px;
+color: #174ca0;
+transition:0.2s ease-in-out;
+}
+.tab_content_more:hover{
+    color:var(--primary-color);
+}
+.tab_content_more::after{
+    visibility: hidden;
 }
 .tab_content_more::after{
     max-width: 86px;
     height: 1.5px;
-    background: #FF5D31;
+    background:var(--primary-color);
     opacity: 1;
+}
+
+.tab_content_more:hover::after{
+    visibility: visible;
+}
+/* service  */
+.service{
+    margin-top: 190px;
+    padding: 68px 0 100px 0 ;
+    background: #FFF6ED;
+}
+.service_top{
+    text-align: center;
+}
+.service_top_desc{
+    margin-bottom: 15px;
+    color: #5E6085;
+font-family: Sora;
+font-size: 1.6rem;
+font-weight: 600;
+line-height: 16px; /* 100% */
+}
+.service_body{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    margin-top: 70px;
+    column-gap: 65px;
+}
+.service_item +.service_item{
+    margin-top: 24px;
+}
+.service_item{
+    padding: 30px 22px 30px 28px;
+    width: 294px;
+border-radius: 10px;
+border: 2px solid rgba(255, 188, 122, 0.26);
+background: #FFF;
+}
+.service_item_heading{
+    padding-left: 12px;
+    position: relative;
+    color: #000958;
+font-family: Sora;
+font-size: 2.2rem;
+font-weight: 600;
+line-height: 22px; /* 100% */
+}
+.service_item_heading_a{
+    color: #000958;
+font-family: Sora;
+font-size: 2.2rem;
+font-weight: 600;
+line-height: 22px; /* 100% */
+}
+.service_item_heading_a:hover{
+color:var(--primary-color);
+}
+.service_item_heading::before{
+   
+    position:absolute;
+    content:"";
+    display: inline-block;
+    width: 2px;
+   inset:0 auto 0 0 ;
+border-radius: 1px;
+background:linear-gradient(var(--primary-color),#FFA187);
+}
+.service_item_desc{
+    margin: 18px 0 24px  ;
+    width: 244px;
+    color: #656689;
+font-size: 1.4rem;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+}
+.service_item_more:hover{
+    color:var(--primary-color);
+}
+.service_item_more{
+    display: inline-flex;
+    align-items: center;
+    color: #34396A;
+font-family: Sora;
+font-size: 1.2rem;
+font-weight: 400;
+line-height: 12px; /* 100% */
+transition: 0.2s ease-in-out;
+}
+.service_item_more_icon{
+    margin-left: 5px;
+    margin-top: 1px;
+}
+.service_media_img{
+    width: 100%;
+   position: relative;
+   z-index: 1;
+   display: block;
+}
+.service_body_media{
+    position: relative;
+    margin-top: 18px;
+}
+.service_body_media::after{
+    position:absolute;
+    content:"";
+    left: 16px;
+    right: 16px;
+    bottom: 0;
+    height: 350px;
+    border-radius: 10px;
+background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+background:#9DF1FB;
+}
+.service_media_ctn{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+.service_ctn{
+    min-width: 214px;
+    color:#174ca0;
+}
+.service_ctn:hover {
+    font-weight: 600;
+    color: var(--primary-color);
+line-height: 16px; /* 100% */
+border-radius: 31px;
+border: 1px solid var(--primary-color);  
+box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
 }
