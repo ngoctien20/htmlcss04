@@ -6,13 +6,13 @@
         <title>Thực hành dự án 4</title>
         <!-- reset css  -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
-        
+
         <!-- cdn wow.js -->
+        <link rel="stylesheet" href="css/animate.css" />
         <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-         
-       
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
         <!-- E font -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -135,7 +135,8 @@
             <div class="container">
                 <div class="hero_inner">
                     <!-- hero media -->
-                    <div class="hero_media">
+                    <div
+                        class="hero_media wow animate__animated animate__fadeInLeft">
                         <div class="hero_img_wrap">
                             <img
                                 src="./assets/img/hero_pet_01.png"
@@ -160,7 +161,7 @@
                                 class="hero_img hero_img-small" />
                         </div>
                     </div>
-                    <div class="hero_list">
+                    <div class="hero_list wow animate__animated animate__fadeIn" data-wow-delay="0.5s">
                         <!-- Hero list item 1 -->
                         <section class="hero_list_item">
                             <img
@@ -194,7 +195,8 @@
                         </section>
                     </div>
                     <!-- hero content -->
-                    <section class="hero_content">
+                    <section
+                        class="hero_content wow animate__animated animate__fadeInRight">
                         <h1 class="hero_heading">
                             Established & Trusted Pet Care Service
                         </h1>
@@ -227,12 +229,13 @@
                 </div>
             </div>
         </section>
-        <main style="height: 50000px">
+        <main style="height: 10000px">
             <!-- about -->
             <section class="about">
                 <div class="container">
                     <div class="about_inner">
-                        <section class="about_content">
+                        <section
+                            class="about_content wow animate__animated animate__fadeInLeft">
                             <p class="about_label">// About //</p>
                             <h2 class="about_heading section_heading">
                                 Best Agency For Your Pet.
@@ -261,7 +264,8 @@
                                 >
                             </div>
                         </section>
-                        <div class="about_media">
+                        <div
+                            class="about_media wow animate__animated animate__fadeInRight">
                             <!-- about card -->
                             <div class="about_card">
                                 <b class="about_card_title">20+</b>
@@ -283,7 +287,8 @@
                                 alt=""
                                 class="about_img_decor" />
                         </div>
-                        <div class="about_media">
+                        <div
+                            class="about_media wow animate__animated animate__fadeInLeft">
                             <figure class="about_img about_img_bottom">
                                 <img
                                     src="./assets/img/about_img_02.png"
@@ -319,7 +324,8 @@
                                 </div>
                             </figure>
                         </div>
-                        <section class="about_content">
+                        <section
+                            class="about_content wow animate__animated animate__fadeInRight">
                             <h2 class="section_heading">
                                 Taking A Vacation? So Is Your Pet.
                             </h2>
@@ -414,12 +420,14 @@
                         <p class="service_top_desc">What we do for you?</p>
                         <h2 class="section_heading">Our Services</h2>
                     </section>
-                    <div class="service_body ">
+                    <div class="service_body">
                         <!-- column 1 -->
-                        <div class="service_body_column animate__animated animate__fadeInLeftBig" data-wow-offset="100">
+                        <div
+                            class="service_body_column wow animate__animated animate__fadeInLeft"
+                            data-wow-offset="100">
                             <!-- item 1 -->
                             <article class="service_item">
-                                <h3 class="service_item_heading ">
+                                <h3 class="service_item_heading">
                                     <a class="service_item_heading_a" href="#!"
                                         >Puppy Sitting</a
                                     >
@@ -479,7 +487,9 @@
                             </article>
                         </div>
                         <!-- column 2  -->
-                        <div class="service_body_column">
+                        <div
+                            class="service_body_column wow animate__animated animate__fadeIn"
+                            data-wow-delay="0.3s">
                             <figure class="service_body_media">
                                 <img
                                     src="./assets/img/service_body_column_img.png"
@@ -493,7 +503,9 @@
                             </div>
                         </div>
                         <!-- column 3 -->
-                        <div class="service_body_column animate__animated animate__fadeInRightBig">
+                        <div
+                            class="service_body_column wow animate__animated animate__fadeInRight"
+                            data-wow-offset="100">
                             <!-- item 4 -->
                             <article class="service_item">
                                 <h3 class="service_item_heading">
@@ -558,9 +570,81 @@
                     </div>
                 </div>
             </section>
+            <!-- staff  -->
+            <section class="staff">
+                <div class="container">
+                    <div class="staff_top service_top">
+                        <p class="staff_desc service_top_desc">
+                            Pet Care Staff
+                        </p>
+                        <h2 class="section_heading staff_heading">
+                            Meet Our Groomers
+                        </h2>
+                    </div>
+
+                    <div class="staff_list wow animate__animated animate__fadeInDown">
+                        <!-- staff item 1 -->
+                        <article class="staff_item">
+                            <figure class="staff_item_img">
+                                <img
+                                    src="./assets/img/staff-01.png"
+                                    alt=""
+                                    class="staff_item_avt" />
+                                    </figure>
+                                <p class="staff_item_title">Pet Trainer</p>
+                                <h3 class="staff_item_name">Meghan Samit</h3>
+                            
+                        </article>
+                        <!-- staff item 2 -->
+                        <article class="staff_item">
+                            <figure class="staff_item_img">
+                                <img
+                                    src="./assets/img/staff-02.png"
+                                    alt=""
+                                    class="staff_item_avt" />
+                                    </figure>
+                                <p class="staff_item_title">Veterinarian</p>
+                                <h3 class="staff_item_name">Alissa Silva</h3>
+                            
+                        </article>
+                        <!-- staff item 3 -->
+                        <article class="staff_item">
+                            <figure class="staff_item_img">
+                                <img
+                                    src="./assets/img/staff-03.png"
+                                    alt=""
+                                    class="staff_item_avt" />
+                                    </figure>
+                                <p class="staff_item_title">Veterinarian</p>
+                                <h3 class="staff_item_name">Cindy Harris</h3>
+                            
+                        </article>
+                        <!-- staff item 4 -->
+                        <article class="staff_item">
+                            <figure class="staff_item_img">
+                                <img
+                                    src="./assets/img/staff-04.png"
+                                    alt=""
+                                    class="staff_item_avt" />
+                                    </figure>
+                                <p class="staff_item_title">Animal Caretaker</p>
+                                <h3 class="staff_item_name">Lucas Tony</h3>
+                            
+                        </article>
+                    </div>
+                    <div class="staff_ctn">
+                        <a href="#!" class="btn service_ctn">View All Team</a>
+                    </div>
+                </div>
+            </section>
         </main>
-        <script src="js/wow.min.js"></script>
-              <script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+            integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"></script>
+
+        <script>
             new WOW().init();
         </script>
     </body>
