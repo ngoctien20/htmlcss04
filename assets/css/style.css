@@ -60,6 +60,10 @@ a {
     background-color: #fff;
     box-shadow: 4px 3px 10px -1px #bf290066;
 }
+.btn_hover{
+        background:#fff;
+        color:var(--primary-color);
+}
 .btn:hover {
     opacity: 0.9;
     cursor: pointer;
@@ -685,13 +689,13 @@ a {
     background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
 }
 .staff_item:nth-child(3) .staff_item_img::before {
-    background: linear-gradient(180deg, #FABF3E 0%, #FFA14A 100%);
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
 }
 .staff_item:nth-child(4) .staff_item_img::before {
-background: linear-gradient(180deg, #5BD6E2 0%, #00A7CC 100%);
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
 }
 .staff_item_img::after {
-    content:"";
+    content: "";
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -749,4 +753,151 @@ background: linear-gradient(180deg, #5BD6E2 0%, #00A7CC 100%);
     display: flex;
     justify-content: center;
     margin-top: 48px;
+}
+
+/* pricing  */
+.pricing {
+    padding: 86px 0;
+    background: #fff6ed;
+}
+.pricing_heading {
+    text-align: center;
+}
+.pricing_desc {
+    text-align: center;
+    width: 709px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pricing_switch_wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 38px;
+}
+.pricing_switch_label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    width: 276px;
+    height: 56px;
+    border-radius: 99px;
+    border: 1px solid #ff5b2e99;
+    user-select: none;
+    cursor: pointer;
+}
+.pricing_switch_label::after {
+    content: "";
+    position: absolute;
+    width: 138px;
+    height: 100%;
+    border-radius: inherit;
+    background: var(--primary-color);
+    top: 0;
+    left: 0;
+    transition: left 1s ease ,width 1s ease;
+}
+.pricing_switch_value {
+    position: relative;
+    z-index: 1;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 16px; /* 100% */
+    color: var(--primary-color);
+    color: #fff;
+}
+.pricing_switch_input:checked + .pricing_switch_label::after{
+    left: auto;
+    right: 0;
+    width: 138px;
+   
+}
+.pricing_switch_input:not(:checked) + .pricing_switch_label .pricing_switch_value:nth-of-type(2),
+.pricing_switch_input:checked + .pricing_switch_label .pricing_switch_value:nth-of-type(1){
+    color:#fff;
+    color: var(--primary-color);
+}
+.pricing_switch_inner{
+    position: relative;
+}
+.pricing_saleoff{
+    position:absolute;
+    top:-10px;
+    right: -112px;
+
+}
+.pricing_list{
+    margin-top: 56px;
+    cursor:pointer;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 44px;
+}
+.pricing_item{
+    background:#fff;
+        border-radius: 20px;
+        padding: 30px 28px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.pricing_item:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.2); 
+}
+.pricing_item_type{
+    color: var(--primary-color);
+font-size: 1.2rem;
+font-weight: 400;
+line-height: 12px; /* 100% */
+}   
+.pricing_item_heading{
+    margin-top: 8px;
+    color: #3F4065;
+font-family: Sora;
+font-size: 1.8rem;
+font-weight: 600;
+line-height: 18px; /* 100% */
+}
+.pricing_item_price{
+    display: inline-block;
+    margin-top: 24px;
+    color: #000958;
+font-family: Sora;
+font-size: 3.4rem;
+font-weight: 700;
+line-height: 34px; /* 103.03% */
+}
+.pricing_item:nth-child(2) .pricing_item_btn ~ {
+    background-color: var(--primary-color);
+    color: #ffffff; 
+}
+.pricing_item_btn{
+    --height: 44px;
+
+    margin-top: 22px;
+    width: 100%;
+    box-shadow: 0px 20px 44px 0px rgba(195, 108, 22, 0.06);
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    color: var(--primary-color);
+    background: transparent;
+}
+.pricing_item_btn:hover{
+    background-color: var(--primary-color);
+    color: #ffffff; 
+}
+.pricing_item_list{
+    margin-top: 24px;
+}
+.pricing_item_item{
+    display: flex;
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1;
+    color: #656689;
+}
+.pricing_item_item::before {
+    content: url(../img/icon/pricing_check.svg);
+    margin-right: 14px;
 }
