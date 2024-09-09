@@ -578,6 +578,13 @@ a {
     border-radius: 10px;
     border: 2px solid rgba(255, 188, 122, 0.26);
     background: #fff;
+    transition:0.3s;
+}
+.service_item_left:hover{
+    transform: translate(-32px,0px);
+}
+.service_item_right:hover{
+    transform: translate(32px,0px);
 }
 .service_item_heading {
     padding-left: 12px;
